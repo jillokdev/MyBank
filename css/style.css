@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
+    color: #538dc5;
+}
+
+p {
+    margin: 0.75rem 0;
+}
+
+i {
+    color: #000;
+}
+
+img {
+    display: block;
+}
+
+/* Reusable Classes */
+.text-primary {
+    color: #000;
+}
+
+.default {
+    border-bottom: 2px solid #fff;
+}
+
+.btn {
+    border: none;
+    background-image: linear-gradient(#61b1fe, #2d97fd);
+    padding: 1.2rem 2rem;
+    border-radius: 2rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn-dark {
+    background-image: linear-gradient(#61b1fe, #005db7)
+}
+
+.btn:hover {
+    background-image: linear-gradient(#fff, #fff);
+    color: #2d97fd;
+    transition: 0.3s ease;
+}
+
+.btn i {
+    padding-right: 5px;
+}
+
+.btn-large {
+    padding: 1.2rem 3rem;
+}
+
+.colo-1 { background-color: #1b81e5; }
+.colo-2 { background-color: #1873cc; }
+.colo-3 { background-color: #1565b2; }
+.colo-4 { background-color: #125699; }
+
+.bold {
+    font-weight: 900;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Section: Navbar */
+
+#navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    background: #2099fe;
+    color: #fff;
+    z-index: 1;
+    padding: 1.2rem 5rem;;
+}
+
+#navbar .logo {
+    font-size: 1.7rem;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar ul li a {
+    color: #fff;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a:hover {
+    border-bottom: 2px solid #fff;
+    transition: 0.3s ease;
+}
+
+/* Section: Showcase */
+#showcase {
+    display: flex;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../img/header.jpg) no-repeat center center/cover;
+    height: 95vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#showcase .social-media {
+    display: flex;
+    flex-direction: column;
+    flex: 0.1;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-basis: auto;
+    padding: 0 0 0 3rem;
+}
+
+#showcase .social-media i {
+    padding: 0.7rem 0;
+    color: #C8C8C8;
+    cursor: pointer;
+}
+
+#showcase .social-media i:hover {
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    flex: 0.90;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-basis: auto;
+}
+
+#showcase .showcase-content h1 {
+    color: #fff;
+    font-size: 4rem;
+    max-width: 60%;
+    font-weight: 100;
+    margin-top: 5rem;
+}
+
+#showcase .showcase-content .btn {
+    position: relative;
+    top: 5%;
+    margin: 1rem 0 5rem 0;
+}
+
+#showcase .call {
+    position: relative;
+    top: 10%;
+}
+
+
+#showcase p {
+    font-size: 1.5rem;
+    padding: 1.2rem 0 0.1rem 0;
+    color: #fff;
+}
+
+/* Section: Features */
+#features {
+    display: flex;
+    flex-direction: row;
+}
+
+#features .feature {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 4rem;
+    color: #fff;
+    flex: 1;
+    justify-content: center;
+}
+
+
+#features .feature p {
+    color: #88b7e5;
+    font-size: 1rem;
+    padding: 1rem 0;
+    font-weight: 600;
+}
+
+#features .feature h2 {
+    font-weight: 100;
+}
+
+#features .feature:last-of-type h2 {
+    margin-bottom: 3rem;
+}
+
+#features .feature i {
+    padding-bottom: 1rem;
+}
+
+#features .feature .order-btn {
+    background-image: linear-gradient(#61b1fe, #2d97fd);
+    padding: 1rem 3rem;
+    margin-left: 3rem;
+    border-radius: 2rem;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Section: Why Us? */
+#why {
+    text-align: center;
+    margin-top: 6rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#why i {
+    color: #1e90ff;
+}
+
+#why h1 {
+    font-size: 3rem;
+}
+
+#why p {
+    font-size: 1rem;
+}
+
+#why .cols {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#why .colums {
+    width: 33.3%;
+    display: inline-block;
+    padding: 2rem;
+}
+
+#why .colums p {
+    font-size: 0.8rem;
+    color: #a5a7af;
+    font-weight: 600;
+}
+
+#why .colums h2 {
+    font-size: 1.3rem;
+    padding-top: 1rem;
+    font-weight: 600;
+}
+
+/* Section: About */
+
+/* Section: Order */
+#order {
+    margin-top: 10rem;
+}
+
+#order h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 2rem;
+}
+
+#order .box {
+    display: flex;
+    flex-direction: row;
+}
+
+#order .box .how-box {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+#order .box .how-box i {
+    color: #fff;
+    background: #2099fe;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 100%;
+}
+
+#order .box .how-box h2 {
+    font-size: 1.3rem;
+    color: #a5a7af;
+}
+
+#order .box .how-box p {
+    color: #a5a7af;
+    font-weight: 100;
+    font-size: 0.9rem;
+    padding-top: 1.5rem;
+}
+
+/* Section: Choose */
+#choose {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #2099fe;
+    padding: 3rem;
+}
+
+#choose h1 {
+    color: #fff;
+    font-weight: 200;
+    font-size: 2.5rem;
+    padding-right: 1rem;
+}
+
+#choose .btn {
+    margin-left: 1rem;
+}
+
+/* Pricing */
+#pricing {
+    margin: 5rem 0;
+}
+
+#pricing .pricing-boxes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#pricing .pricing-boxes .pricing-box .btn {
+    margin-top: 2rem;
+}
+
+#footer {
+    padding: 2rem;
+    background-color: #005db7;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+}
+
+#footer .info, #footer .contact-info, #footer .newsletter {
+    flex: 1;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+#footer .newsletter input {
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    margin-right: 5px;
+}
