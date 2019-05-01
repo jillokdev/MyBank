@@ -38,6 +38,11 @@ img {
     border-bottom: 2px solid #fff;
 }
 
+.links:hover {
+    color: #125699;
+    transition: 0.1s ease;
+}
+
 .btn {
     border: none;
     background-image: linear-gradient(#61b1fe, #2d97fd);
@@ -177,6 +182,10 @@ img {
 #showcase .call {
     position: relative;
     top: 10%;
+}
+
+#showcase .call p a {
+    color: #fff;
 }
 
 
@@ -350,6 +359,13 @@ img {
     margin: 5rem 0;
 }
 
+#pricing h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
 #pricing .pricing-boxes {
     display: flex;
     flex-direction: row;
@@ -358,16 +374,34 @@ img {
     justify-content: center;
 }
 
+#pricing .pricing-boxes .pricing-box p {
+    color: #a5a7af;
+    margin: 2rem 0;
+}
+
 #pricing .pricing-boxes .pricing-box .btn {
     margin-top: 2rem;
+}
+
+#pricing .pricing-boxes .pricing-box img {
+    margin-bottom: 1.5rem;
 }
 
 #footer {
     padding: 2rem;
     background-color: #005db7;
+    color: #fff;
+}
+
+#footer .footer-content {
     display: flex;
     flex-direction: row;
-    color: #fff;
+}
+
+#footer p{
+    max-width: 80%;
+    margin: 1rem auto 0 auto;
+    color: #a5a7af;
 }
 
 #footer .info, #footer .contact-info, #footer .newsletter {
@@ -377,8 +411,27 @@ img {
     padding: 1rem;
 }
 
+#footer .contact-info a, #footer .contact-info p {
+    color: #fff;
+}
+
 #footer .newsletter input {
     padding: 1rem 1.5rem;
     border-radius: 5px;
     margin-right: 5px;
+}
+
+#footer .newsletter form {
+    margin-top: 2rem;
+}
+
+#footer .copyright {
+    margin: 2rem 0 0 0;
+}
+
+#footer .copyright p {
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.1rem;;
 }
