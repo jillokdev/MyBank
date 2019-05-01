@@ -79,6 +79,12 @@ img {
     margin: auto;
 }
 
+.center {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
 /* Section: Navbar */
 
 #navbar {
